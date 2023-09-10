@@ -35,6 +35,11 @@
          .border {
              border: 1px solid #000; /* Толщина, стиль и цвет рамки */
          }
+
+        .bordered-row {
+            border: 1px solid black;
+        }
+
     </style>
 </head>
 
@@ -93,7 +98,8 @@
                     <td class="params">
                         <!-- Секция с информацией о пользователе -->
                         <section>
-                            <h3>Информация о пользователе</h3>
+                            <h2 style="vertical-align: top;">Мирошников Егор</h2>
+                            <hr>
                             <ul>
                                 <li>Пол: <i>паркет</i></li>
                                 <li>Ориентация: <i>натуральная</i></li>
@@ -106,52 +112,52 @@
 
 
 
-        <section style="border: 3px solid #000">
-            <h2>Новостная лента</h2>
-            <!-- Здесь будет содержимое новостной ленты -->
-            <table>
-
-                <tr>
-                    <article class="border">
-                        <h4>Новость номер 404</h4>
-                        <aside>
-                            <p><del>Сегодня я понял: нельзя говорить детям, что дно бассейна пахнет шоколадом.</del></p>
-                            <p><ins>Сегодня я отлично сходил в бассейн, всем советую.</ins></p>
-                        </aside>
-                    </article>
-                </tr>
-
-
-                <tr>
-                    <article class="border">
-                        <h4>Новость номер 11.09</h4>
-                        <aside>
-                            <p>Сегодня я встретил вдух близнецов. До связи.</p>
-                        </aside>
-                    </article>
-                </tr>
+            <section style="border: 3px solid #000">
+                <h2>Новостная лента</h2>
+                <hr>
+                <!-- Здесь будет содержимое новостной ленты -->
+                <table>
+                    <tr>
+                        <td style="border: 1px solid black; width: 990px">
+                            <h4>Новость номер 404</h4>
+                            <aside>
+                                <p><del>Сегодня я понял: нельзя говорить детям, что дно бассейна пахнет шоколадом.</del></p>
+                                <p><ins>Сегодня я отлично сходил в бассейн, всем советую.</ins></p>
+                            </aside>
+                        </td>
+                    </tr>
 
 
-                <tr>
-                    <article class="border">
-                        <h4>Новость номер 11.09</h4>
-                        <aside>
-                            <pre>
-                                *************
-                                *           *
-                                *  Пример   *
-                                *           *
-                                *************
-                            </pre>
-                        </aside>
-                    </article>
-                </tr>
+                    <tr>
+                        <td style="border: 1px solid black; width: 990px">
+                            <h4>Новость номер 11.09</h4>
+                            <aside>
+                                <p>Сегодня я встретил вдух близнецов. До связи.</p>
+                            </aside>
+                        </td>
+                    </tr>
 
 
-                <tr>
-                    <article class="border">
-                        <h4>Новость номер 11.09</h4>
-                        <aside>
+                    <tr>
+                        <td style="border: 1px solid black; width: 990px">
+                            <h4>Новость номер 11.09</h4>
+                            <aside>
+                                <pre>
+                                    *************
+                                    *           *
+                                    *  Пример   *
+                                    *           *
+                                    *************
+                                </pre>
+                            </aside>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td style="border: 1px solid black; width: 990px">
+                            <h4>Новость номер 543</h4>
+                            <aside>
                             <pre>
                                 <code>
                                     function newFunc() {
@@ -159,39 +165,74 @@
                                     }
                                 </code>
                             </pre>
-                        </aside>
-                    </article>
-                </tr>
+                            </aside>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <article class="border">
-                        <h4>Новость номер 123</h4>
-                        <aside>
-                            <blockquote>
-                                <p>
-                                    <em> Слабый мужчина - ищет оправдания,</em>
-                                    <strong> сильный - подготовил их заранее.</strong>
-                                </p>
-                                <footer>
-                                    <cite>(с) Джейсон Стэтхем</cite>
-                                </footer>
-                            </blockquote>
-                        </aside>
-                    </article>
-                </tr>
+                    <tr>
+                        <td style="border: 1px solid black; width: 990px">
+                            <h4>Новость номер 123</h4>
+                            <aside>
+                                <blockquote>
+                                    <p>
+                                        <em> Слабый мужчина - ищет оправдания,</em>
+                                        <strong> сильный - подготовил их заранее.</strong>
+                                    </p>
+                                    <footer>
+                                        <cite>(с) Джейсон Стэтхем</cite>
+                                    </footer>
+                                </blockquote>
+                            </aside>
+                        </td>
+                    </tr>
 
 
-            </table>
-        </section>
+                    <tr>
+                        <td style="border: 1px solid black; width: 990px">
+                            <h4>Новость номер 123</h4>
+                            <aside>
+                                <blockquote>
+                                    <p>
+                                        <em> Слабый мужчина - ищет оправдания,</em>
+                                        <strong> сильный - подготовил их заранее.</strong>
+                                    </p>
+                                    <footer>
+                                        <cite>(с) Джейсон Стэтхем</cite>
+                                    </footer>
+                                </blockquote>
+                            </aside>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td style="border: 1px solid black; width: 990px">
+                            <h4>Новость номер я сбился со счёту</h4>
+                            <aside>
+                                <pre>Сегодня я ходил на пару по химии. Вот чему я там научился:</pre>
+                                <p>Химическая формула воды (H<sub>2</sub>O):</p>
+                                <pre>А потом я пошёл на математику:</pre>
+                                <p>Квадратное уравонеие: (y = x<sup>2</sup>):</p>
+                            </aside>
+                        </td>
+                    </tr>
+
+                </table>
+                <article style="text-align: center; border: 1px solid black">
+                    <h4>На этом новости закончены. Зайдите завтра!</h4>
+
+                </article>
+
+            </section>
 
 
         </div>
     </main>
 
     <hr>
-<footer class="container">
-    <!-- Здесь разместите информацию о проекте и ссылки на социальные сети -->
-    <p>&copy; 2023 FacePalm. Все права защищены.</p>
-</footer>
+    <footer class="container">
+        <!-- Здесь разместите информацию о проекте и ссылки на социальные сети -->
+        <p>&copy; 2023 FacePalm. Все права защищены.</p>
+    </footer>
 </body>
 </html>
