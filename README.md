@@ -5,3 +5,4 @@
 
 Макет: [layout](https://github.com/jovialgang/WebProg/blob/main/recources/layout.jpg)
 
+Деплой: [site](https://jovialgang.github.io/WebProg/)
