@@ -1,0 +1,108 @@
+div.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+header.params {
+    border: 1px solid #000;
+}
+header > h1 {
+    text-align: center
+}
+
+body.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h1.params {
+    text-align: center;
+    border: 1px solid #000;
+}
+
+section.params {
+    border: 1px solid #000;
+    text-align: center;
+    text-transform: uppercase;
+    /*жирный шрифт тут*/
+}
+
+.styled-text {
+    color: blue; /* Задаем цвет текста */
+    font-weight: bold; /* Делаем текст жирным */
+    font-style: italic; /* Добавляем курсив */
+    background-color: yellow; /* Задаем фоновый цвет */
+    text-decoration: underline; /* Добавляем подчеркивание */
+    padding: 2px 4px; /* Добавляем внутренний отступ */
+    border: 1px solid red; /* Добавляем рамку */
+    border-radius: 4px; /* Добавляем скругленные углы для рамки */
+    word-spacing: 4px; /* Устанавливает интервал между словами в 4 пикселя */
+    letter-spacing: 2px; /* Устанавливает интервал между символами в заголовке на 2 пикселя */
+
+
+}
+
+
+td.params {
+    width: 25%;
+    border: 1px solid #000;
+}
+.border {
+    border: 1px solid #000; /* Толщина, стиль и цвет рамки */
+}
+
+.center {
+    text-align: center;
+}
+
+.borderTextCentre {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+
+
+section aside img {
+    width: 300px;
+    height: auto; /* Пропорциональное масштабирование */
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.5);
+}
+
+.bordered-row {
+    border: 1px solid black;
+}
+
+.profile_img {
+    width: 300px;
+    height: auto; /* Пропорциональное масштабирование */
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.5);
+}
+
+.logo_img {
+    max-width: 10%;
+    height: auto;
+    vertical-align: middle;
+    horiz-align: left;
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.5);
+}
+
+.textLogo {
+    text-shadow: 1px 1px 50px rgba(0, 0, 0, 1);
+    line-height: 1;
+    font-weight: bold;
+    background-color: antiquewhite;
+    color: #4b4031;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Равномерное распределение по вертикали */
+    /*align-items: center; !* Выравнивание элементов слева *!*/
+
+}
+
+.flex-container > section {
+    margin-bottom: 10px; /* Дополнительный отступ между секциями */
+    flex-direction: column; /* Отображение элементов в столбце сверху вниз */
+    /*align-items: center;*/
+}
