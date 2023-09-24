@@ -1,6 +1,6 @@
 div.container {
     width: 1000px;
-    margin: 0 auto;
+    margin: auto;
 }
 header.params {
     border: 1px solid #000;
@@ -24,12 +24,14 @@ section.params {
     text-align: center;
     text-transform: uppercase;
     /*жирный шрифт тут*/
+    text-indent: -10em; /*красная строка*/
 }
 
 .styled-text {
     color: blue; /* Задаем цвет текста */
     font-weight: bold; /* Делаем текст жирным */
     font-style: italic; /* Добавляем курсив */
+    font-size: 30px;
     background-color: yellow; /* Задаем фоновый цвет */
     text-decoration: underline; /* Добавляем подчеркивание */
     padding: 2px 4px; /* Добавляем внутренний отступ */
@@ -87,7 +89,7 @@ section aside img {
 
 .textLogo {
     text-shadow: 1px 1px 50px rgba(0, 0, 0, 1);
-    line-height: 1;
+    line-height: 20px; /*высота строки*/
     font-weight: bold;
     background-color: antiquewhite;
     color: #4b4031;
