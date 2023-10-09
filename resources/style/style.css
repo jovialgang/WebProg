@@ -14,6 +14,12 @@ body.container {
     margin: 0 auto;
 }
 
+/*body {*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*}*/
+
+
+
 h1.params {
     text-align: center;
     border: 1px solid #000;
@@ -22,27 +28,29 @@ h1.params {
 section.params {
     border: 1px solid #000;
     text-align: center;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     /*жирный шрифт тут*/
-    text-indent: -10em; /*красная строка*/
+    /*text-indent: -10em; !*красная строка*!*/
 }
 
 .styled-text {
-    color: blue; /* Задаем цвет текста */
-    font-weight: bold; /* Делаем текст жирным */
-    font-style: italic; /* Добавляем курсив */
+    /*color: blue; !* Задаем цвет текста *!*/
+    /*font-weight: 700; !* Делаем текст жирным *!*/
+    /*font-style: italic; !* Добавляем курсив *!*/
     font-size: 30px;
-    background-color: yellow; /* Задаем фоновый цвет */
+    /*background-color: yellow; !* Задаем фоновый цвет *!*/
     text-decoration: underline; /* Добавляем подчеркивание */
-    padding: 2px 4px; /* Добавляем внутренний отступ */
-    border: 1px solid red; /* Добавляем рамку */
-    border-radius: 4px; /* Добавляем скругленные углы для рамки */
-    word-spacing: 4px; /* Устанавливает интервал между словами в 4 пикселя */
-    letter-spacing: 2px; /* Устанавливает интервал между символами в заголовке на 2 пикселя */
-
+    /*padding: 2px 4px; !* Добавляем внутренний отступ *!*/
+    /*border: 1px solid red; !* Добавляем рамку *!*/
+    /*border-radius: 4px; !* Добавляем скругленные углы для рамки *!*/
+    /*word-spacing: 4px; !* Устанавливает интервал между словами в 4 пикселя *!*/
+    /*letter-spacing: 2px; !* Устанавливает интервал между символами в заголовке на 2 пикселя *!*/
 
 }
 
+.main-content {
+    margin-bottom: 60px; /* Отступ снизу, равный высоте закрепленного подвала */
+}
 
 td.params {
     width: 25%;
@@ -108,3 +116,97 @@ section aside img {
     flex-direction: column; /* Отображение элементов в столбце сверху вниз */
     /*align-items: center;*/
 }
+
+/*.footer {*/
+/*    text-align: center;*/
+/*    padding: 10px;*/
+/*}*/
+.footer {
+    /* Стили для подвала */
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1px;
+    position: fixed; /* Закрепляем подвал внизу страницы */
+    bottom: 0; /* Отступ снизу */
+    left: 0; /* Отступ слева */
+    right: 0; /* Отступ справа */
+}
+
+
+ /*Стили для таблицы */
+.table-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1px;
+    margin: 5px;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+}
+
+.table-cell {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Стили для заголовков */
+.table-header {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+}
+
+.table-row:nth-child(even) {
+    background-color: #dcdcdc;
+}
+
+
+
+
+/* Скрытие элементов на маленьких экранах */
+@media screen and (max-width: 720px) {
+    .hide-on-small-screen {
+        display: none;
+    }
+
+    .table-row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+    }
+
+    .table-header {
+        font-weight: bold;
+        background-color: #333;
+        color: #fff;
+    }
+
+}
+
+
+/* Скрытие элементов на средних экранах */
+@media screen and (min-width: 1920px) {
+    .container {
+        padding: 20px; /* Увеличить отступы для контейнера на больших экранах */
+    }
+
+    .params {
+        font-size: 24px; /* Увеличить размер шрифта для заголовков */
+    }
+}
+
+/* Скрытие элементов на больших экранах */
+@media screen and (min-width: 2560px) {
+
+    .container {
+        max-width: 1400px; /* Увеличить максимальную ширину контейнера */
+    }
+}
+
+

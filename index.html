@@ -1,149 +1,156 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <meta charset="UTF-8">
-<!--    <link rel="stylesheet" type="text/css" href="outline-prototype-label.css">-->
+
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    Мета-тег viewport с атрибутом content="width=device-width"-->
+<!--    используется для указания браузеру, что ширина контента на странице-->
+<!--    должна соответствовать физической ширине устройства (ширине экрана устройства), -->
+<!--    что особенно важно для адаптивного дизайна веб-страниц.-->
+
     <link rel="stylesheet" type="text/css" href="resources/style/style.css">
     <title>Welcome To FacePalm</title>
     <meta name="keywords" content="социальная сеть, FacePalm, друзья, блог, профиль">
     <meta name="description" content="FacePalm - это простая версия социальной сети или блога.">
-
-<!--</head> почиать про margin и про pading-->
+</head>
 
 <body class="container">
-    <header class="params">
-        <!-- Здесь разместите логотип и навигационное меню -->
-        <h1>
-            <img src="resources/img/logo.jpg" alt="Логотип FacePalm" class="logo_img">
-            <span class="textLogo">theFacePalm</span>
-        </h1>
+<header class="params">
+    <h1>
+        <img src="resources/img/logo.jpg" alt="Логотип FacePalm" class="logo_img">
+        <span class="textLogo">theFacePalm</span>
+    </h1>
+</header>
 
-    </header>
+<main class="border main-content">
+    <section class="borderTextCentre">
+        <h2>Профиль пользователя</h2>
+        <!-- Здесь будет информация о профиле пользователя -->
+    </section>
 
+    <div class="container">
+        <div class="flex-container">
+            <section>
+                <nav>
+                    <!-- Навигационное меню -->
+                    <ol>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Профиль</a></li>
+                        <li><a href="#">Друзья</a></li>
+                        <li><a href="#">Донат</a></li>
+                    </ol>
+                </nav>
+            </section>
 
-    <main class="border">
+            <section>что-то</section>
 
-        <section class="borderTextCentre">
-            <h2>Профиль пользователя</h2>
-            <!-- Здесь будет информация о профиле пользователя -->
-        </section>
-
-        <div class="container">
-
-            <div class="flex-container">
-
-                <section>
-                    <nav>
-                        <!-- Навигационное меню -->
-                        <ol>
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">Профиль</a></li>
-                            <li><a href="#">Друзья</a></li>
-                            <li><a href="#">Донат</a></li>
-                        </ol>
-                    </nav>
-                </section>
-
-                <section>что-то</section>
-
-                <!-- Секция с фотографией пользователя -->
-                <section>
-
-                    <aside>
-                        <h2>Фотография пользователя</h2>
-                        <img src="resources/img/IMG_5641.jpeg" alt="Фотография пользователя" class="profile_img">
-                    </aside>
-
-
-                    <aside>
-                        <ul>
-                            <li><a href="#">Все фотографии</a></li>
-                            <li><a href="#">Кринжовые истории</a></li>
-                        </ul>
-                    </aside>
-
-
-                </section>
-
-
-                <!-- Секция с информацией о пользователе -->
-                <section>
-                    <h2>Мирошников Егор</h2>
-                    <hr>
-                    <ul>
-                        <li>Пол: <i>паркет</i></li>
-                        <li>Ориентация: <i>натуральная</i></li>
-                        <li>Телефон: <i>имеется</i></li>
-                        <li>Почта: <i>голубиная</i></li>
-                    </ul>
-                </section>
-            </div>
-
-
-
-
-            <section class="params">
-                <h2>Новостная лента</h2>
-                <hr>
-                <!-- Здесь будет содержимое новостной ленты -->
-
-                    <section>
-                            <h4>Новость номер 404</h4>
-                            <aside>
-                                <p><del>Сегодня я понял: нельзя говорить детям, что дно бассейна пахнет шоколадом.</del></p>
-                                <p><ins>Сегодня я отлично сходил в бассейн, всем советую.</ins></p>
-                            </aside>
-                        <hr>
-                    </section>
-
-                    <section>
-                        <h4>Новость номер (форматирование текста)</h4>
-                        <aside>
-                            <p>Это <span class="styled-text">стилизированный текст</span> внутри абзаца.</p>
-                        </aside>
-                        <hr>
-                    </section>
-
-                    <section>
-                            <h4>Новость номер 11.09</h4>
-                            <aside>
-                                <p>Сегодня я встретил вдух близнецов. До связи.</p>
-                            </aside>
-                        <hr>
-                    </section>
-
-
-
-                    <section>
-                            <h4>Новость номер 007</h4>
-                            <aside>
-                                <blockquote>
-                                    <p>
-                                        <em> Слабый мужчина - ищет оправдания,</em>
-                                        <strong> сильный - подготовил их заранее.</strong>
-                                    </p>
-                                    <footer>
-                                        <cite>(с) Джейсон Стэтхем</cite>
-                                    </footer>
-                                </blockquote>
-                            </aside>
-                        <hr>
-                    </section>
-
+            <!-- Секция с фотографией пользователя -->
+            <section>
                 <aside>
-                    <h4>На этом новости закончены. Зайдите завтра!</h4>
+                    <h2>Фотография пользователя</h2>
+                    <img src="resources/img/IMG_5641.jpeg" alt="Фотография пользователя" class="profile_img">
                 </aside>
 
+                <aside>
+                    <ul>
+                        <li><a href="#">Все фотографии</a></li>
+                        <li><a href="#">Кринжовые истории</a></li>
+                    </ul>
+                </aside>
+            </section>
+
+            <!-- Секция с информацией о пользователе -->
+            <section>
+                <h2>Мирошников Егор</h2>
+                <hr>
+                <ul>
+                    <li>Пол: <i>паркет</i></li>
+                    <li>Ориентация: <i>натуральная</i></li>
+                    <li>Телефон: <i>имеется</i></li>
+                    <li>Почта: <i>голубиная</i></li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="params">
+            <h2>Новостная лента</h2>
+            <hr>
+            <!-- Здесь будет содержимое новостной ленты -->
+            <section>
+                <h4>Новость номер 404</h4>
+                <aside>
+                    <p><del>Сегодня я понял: нельзя говорить детям, что дно бассейна пахнет шоколадом.</del></p>
+                    <p><ins>Сегодня я отлично сходил в бассейн, всем советую.</ins></p>
+                </aside>
+                <hr>
             </section>
 
 
-        </div>
-    </main>
+            <section class="hide-on-small-screen">
+                <h4>Новость номер 007</h4>
+                <aside>
+                    <blockquote>
+                        <p>
+                            <em> Слабый мужчина - ищет оправдания,</em>
+                            <strong> сильный - подготовил их заранее.</strong>
+                        </p>
+                        <footer>
+                            <cite>(с) Джейсон Стэтхем</cite>
+                        </footer>
+                    </blockquote>
+                </aside>
+                <hr>
+            </section>
 
-    <hr>
-    <footer class="center">
-        <!-- Здесь разместите информацию о проекте и ссылки на социальные сети -->
-        <p>&copy; 2023 FacePalm. Все права защищены.</p>
-    </footer>
+            <section>
+                <h4>Новость номер 123 (Тестим табличку)</h4>
+                <div class="table-container">
+                    <!-- Заголовки -->
+                    <div class="table-row table-header">
+                        <div class="table-cell">Заголовок 1</div>
+                        <div class="table-cell">Заголовок 2</div>
+                        <div class="table-cell">Заголовок 3</div>
+                    </div>
+
+                    <!-- Строки таблицы -->
+                    <div class="table-row">
+                        <div class="table-cell">Строка 1, Столбец 1</div>
+                        <div class="table-cell">Строка 1, Столбец 2</div>
+                        <div class="table-cell">Строка 1, Столбец 3</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Строка 2, Столбец 1</div>
+                        <div class="table-cell">Строка 2, Столбец 2</div>
+                        <div class="table-cell">Строка 2, Столбец 3</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Строка 3, Столбец 1</div>
+                        <div class="table-cell">Строка 3, Столбец 2</div>
+                        <div class="table-cell">Строка 3, Столбец 3</div>
+                    </div>
+                </div>
+                <hr>
+            </section>
+
+            <aside>
+                <h4>На этом новости закончены. Зайдите завтра!</h4>
+            </aside>
+
+        </section>
+    </div>
+</main>
+
+<hr>
+<!--<footer class="center">-->
+<!--    <p>&copy; 2023 FacePalm. Все права защищены.</p>-->
+<!--</footer>-->
+<footer class="footer">
+    <p>&copy; 2023 FacePalm. Все права защищены.</p>
+</footer>
 </body>
+
 </html>
