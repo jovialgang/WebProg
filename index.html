@@ -13,6 +13,8 @@
 <!--    что особенно важно для адаптивного дизайна веб-страниц.-->
 
     <link rel="stylesheet" type="text/css" href="resources/style/style.css">
+<!--    <link rel="stylesheet" type="text/css" href="resources/style/outline-prototype-label.css">-->
+
     <title>Welcome To FacePalm</title>
     <meta name="keywords" content="социальная сеть, FacePalm, друзья, блог, профиль">
     <meta name="description" content="FacePalm - это простая версия социальной сети или блога.">
@@ -108,31 +110,35 @@
 
             <section>
                 <h4>Новость номер 123 (Тестим табличку)</h4>
-                <div class="table-container">
-                    <!-- Заголовки -->
-                    <div class="table-row table-header">
-                        <div class="table-cell">Заголовок 1</div>
-                        <div class="table-cell">Заголовок 2</div>
-                        <div class="table-cell">Заголовок 3</div>
-                    </div>
+                <table class="grid-table">
+                    <thead>
+                    <tr class="table-header">
+                        <th>Заголовок 1</th>
+                        <th>Заголовок 2</th>
+                        <th>Заголовок 3</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Строка 1, Столбец 1</td>
+                        <td>Строка 1, Столбец 2</td>
+                        <td>Строка 1, Столбец 3</td>
+                    </tr>
+                    <tr>
+                        <td>Строка 2, Столбец 1</td>
+                        <td>Строка 2, Столбец 2</td>
+                        <td>Строка 2, Столбец 3</td>
+                    </tr>
+                    <tr>
+                        <td>Строка 3, Столбец 1</td>
+                        <td>Строка 3, Столбец 2</td>
+                        <td>Строка 3, Столбец 3</td>
+                    </tr>
+                    </tbody>
+                </table>
 
-                    <!-- Строки таблицы -->
-                    <div class="table-row">
-                        <div class="table-cell">Строка 1, Столбец 1</div>
-                        <div class="table-cell">Строка 1, Столбец 2</div>
-                        <div class="table-cell">Строка 1, Столбец 3</div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-cell">Строка 2, Столбец 1</div>
-                        <div class="table-cell">Строка 2, Столбец 2</div>
-                        <div class="table-cell">Строка 2, Столбец 3</div>
-                    </div>
-                    <div class="table-row">
-                        <div class="table-cell">Строка 3, Столбец 1</div>
-                        <div class="table-cell">Строка 3, Столбец 2</div>
-                        <div class="table-cell">Строка 3, Столбец 3</div>
-                    </div>
-                </div>
+
+
                 <hr>
             </section>
 

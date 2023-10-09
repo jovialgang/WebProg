@@ -1,5 +1,5 @@
 div.container {
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
 }
 header.params {
@@ -10,14 +10,9 @@ header > h1 {
 }
 
 body.container {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
-
-/*body {*/
-/*    font-family: 'Montserrat', sans-serif;*/
-/*}*/
-
 
 
 h1.params {
@@ -103,19 +98,31 @@ section aside img {
     color: #4b4031;
 }
 
+
 .flex-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; /* Равномерное распределение по вертикали */
-    /*align-items: center; !* Выравнивание элементов слева *!*/
-
+    justify-content: space-around;
 }
 
 .flex-container > section {
-    margin-bottom: 10px; /* Дополнительный отступ между секциями */
-    flex-direction: column; /* Отображение элементов в столбце сверху вниз */
-    /*align-items: center;*/
+    margin-bottom: 10px;
+    flex-direction: column;
 }
+
+/* Медиа-запрос для экранов шириной менее 768px (портативные устройства) */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column-reverse; /* Изменение на колоночное расположение */
+        align-items: center; /* Центрирование элементов по горизонтали */
+    }
+
+    .flex-container > section {
+        margin-bottom: 20px; /* Увеличение отступа между секциями */
+    }
+}
+
+
 
 /*.footer {*/
 /*    text-align: center;*/
@@ -135,59 +142,55 @@ section aside img {
 
 
  /*Стили для таблицы */
-.table-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1px;
-    margin: 5px;
-}
-
-.table-row {
+table.grid-table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
+    grid-gap: 10px; /* Отступ между ячейками */
 }
 
-.table-cell {
-    padding: 10px;
-    border: 1px solid #ccc;
+/* Скрываем <thead>, <tbody> и <tr> */
+table.grid-table thead,
+table.grid-table tbody,
+table.grid-table tr {
+    display: contents;
 }
 
-/* Стили для заголовков */
-.table-header {
-    font-weight: bold;
-    background-color: #333;
-    color: #fff;
+/* Стилизация ячеек таблицы */
+table.grid-table td,
+table.grid-table th {
+    border: 1px solid #ccc; /* Границы для ячеек */
+    padding: 10px; /* Отступ внутри ячеек */
+    text-align: center;
 }
 
-.table-row:nth-child(even) {
-    background-color: #dcdcdc;
+table.grid-table td:nth-child(even) {
+    background-color: #f2f2f2; /* Цвет фона для четных строк */
 }
+
 
 
 
 
 /* Скрытие элементов на маленьких экранах */
-@media screen and (max-width: 720px) {
-    .hide-on-small-screen {
-        display: none;
-    }
+/*@media screen and (max-width: 1050px) {*/
 
-    .table-row {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        background-color: #f2f2f2;
-        border: 1px solid #ccc;
-    }
+/*    table.grid-table {*/
+/*        display: grid;*/
+/*        grid-template-columns: repeat(2, 1fr);*/
+/*        grid-gap: 10px; !* Отступ между ячейками *!*/
+/*    }*/
 
-    .table-header {
-        font-weight: bold;
-        background-color: #333;
-        color: #fff;
-    }
+/*    .flex-container {*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        justify-content: center; !* Центрирование по вертикали *!*/
+/*        align-items: center; !* Центрирование по горизонтали *!*/
+/*    }*/
 
-}
+/*    .hide-on-small-screen {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
 
 
 /* Скрытие элементов на средних экранах */
