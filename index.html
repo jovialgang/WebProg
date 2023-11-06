@@ -2,158 +2,36 @@
 <html lang="ru">
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
     <meta charset="UTF-8">
-
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <script type="text/javascript" src="scripts/statistics.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--    Мета-тег viewport с атрибутом content="width=device-width"-->
-<!--    используется для указания браузеру, что ширина контента на странице-->
-<!--    должна соответствовать физической ширине устройства (ширине экрана устройства), -->
-<!--    что особенно важно для адаптивного дизайна веб-страниц.-->
-
     <link rel="stylesheet" type="text/css" href="resources/style/style.css">
-<!--    <link rel="stylesheet" type="text/css" href="resources/style/outline-prototype-label.css">-->
 
     <title>Welcome To FacePalm</title>
-    <meta name="keywords" content="социальная сеть, FacePalm, друзья, блог, профиль">
-    <meta name="description" content="FacePalm - это простая версия социальной сети или блога.">
+<!--    <meta name="keywords" content="социальная сеть, FacePalm, друзья, блог, профиль">-->
+<!--    <meta name="description" content="FacePalm - это простая версия социальной сети или блога.">-->
 </head>
 
-<body class="container">
+<body>
 <header class="params">
     <h1>
         <img src="resources/img/logo.jpg" alt="Логотип FacePalm" class="logo_img">
         <span class="textLogo">theFacePalm</span>
     </h1>
 </header>
+<div id="menu">
+    <ul class="footer-links">
+        <li><a href="#" data-page="my_page">Моя страница</a></li>
+        <li><a href="#" data-page="about">О нас</a></li>
+        <li><a href="#" data-page="contact">Связаться с нами</a></li>
+    </ul>
+</div>
+<div id="content">
+    <!-- Здесь будет отображаться содержимое других страниц -->
+</div>
+<script src="scripts/current_page.js"></script>
 
-<main class="border main-content">
-    <section class="borderTextCentre">
-        <h2>Профиль пользователя</h2>
-        <!-- Здесь будет информация о профиле пользователя -->
-    </section>
-
-    <div class="container">
-        <div class="flex-container">
-            <section>
-                <nav>
-                    <!-- Навигационное меню -->
-                    <ol>
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#">Профиль</a></li>
-                        <li><a href="#">Друзья</a></li>
-                        <li><a href="#">Донат</a></li>
-                    </ol>
-                </nav>
-            </section>
-
-            <section>что-то</section>
-
-            <!-- Секция с фотографией пользователя -->
-            <section>
-                <aside>
-                    <h2>Фотография пользователя</h2>
-                    <img src="resources/img/IMG_5641.jpeg" alt="Фотография пользователя" class="profile_img">
-                </aside>
-
-                <aside>
-                    <ul>
-                        <li><a href="#">Все фотографии</a></li>
-                        <li><a href="#">Кринжовые истории</a></li>
-                    </ul>
-                </aside>
-            </section>
-
-            <!-- Секция с информацией о пользователе -->
-            <section>
-                <h2>Мирошников Егор</h2>
-                <hr>
-                <ul>
-                    <li>Пол: <i>паркет</i></li>
-                    <li>Ориентация: <i>натуральная</i></li>
-                    <li>Телефон: <i>имеется</i></li>
-                    <li>Почта: <i>голубиная</i></li>
-                </ul>
-            </section>
-        </div>
-
-        <section class="params">
-            <h2>Новостная лента</h2>
-            <hr>
-            <!-- Здесь будет содержимое новостной ленты -->
-            <section>
-                <h4>Новость номер 404</h4>
-                <aside>
-                    <p><del>Сегодня я понял: нельзя говорить детям, что дно бассейна пахнет шоколадом.</del></p>
-                    <p><ins>Сегодня я отлично сходил в бассейн, всем советую.</ins></p>
-                </aside>
-                <hr>
-            </section>
-
-
-            <section class="hide-on-small-screen">
-                <h4>Новость номер 007</h4>
-                <aside>
-                    <blockquote>
-                        <p>
-                            <em> Слабый мужчина - ищет оправдания,</em>
-                            <strong> сильный - подготовил их заранее.</strong>
-                        </p>
-                        <footer>
-                            <cite>(с) Джейсон Стэтхем</cite>
-                        </footer>
-                    </blockquote>
-                </aside>
-                <hr>
-            </section>
-
-            <section>
-                <h4>Новость номер 123 (Тестим табличку)</h4>
-                <table class="grid-table">
-                    <thead>
-                    <tr class="table-header">
-                        <th>Заголовок 1</th>
-                        <th>Заголовок 2</th>
-                        <th>Заголовок 3</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Строка 1, Столбец 1</td>
-                        <td>Строка 1, Столбец 2</td>
-                        <td>Строка 1, Столбец 3</td>
-                    </tr>
-                    <tr>
-                        <td>Строка 2, Столбец 1</td>
-                        <td>Строка 2, Столбец 2</td>
-                        <td>Строка 2, Столбец 3</td>
-                    </tr>
-                    <tr>
-                        <td>Строка 3, Столбец 1</td>
-                        <td>Строка 3, Столбец 2</td>
-                        <td>Строка 3, Столбец 3</td>
-                    </tr>
-                    </tbody>
-                </table>
-
-
-
-                <hr>
-            </section>
-
-            <aside>
-                <h4>На этом новости закончены. Зайдите завтра!</h4>
-            </aside>
-
-        </section>
-    </div>
-</main>
-
-<hr>
-<!--<footer class="center">-->
-<!--    <p>&copy; 2023 FacePalm. Все права защищены.</p>-->
-<!--</footer>-->
 <footer class="footer">
     <p>&copy; 2023 FacePalm. Все права защищены.</p>
 </footer>

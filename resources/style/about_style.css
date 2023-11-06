@@ -1,0 +1,97 @@
+/* Reset some default browser styles */
+/*body, h1, h2, p, ul {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.logo_img {*/
+/*    max-width: 10%;*/
+/*    height: auto;*/
+/*    vertical-align: middle;*/
+/*    horiz-align: left;*/
+/*    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.5);*/
+/*}*/
+
+/*body {*/
+/*    !*font-family: Arial, sans-serif;*!*/
+/*    background-color: #f7f7f7;*/
+/*    color: #333;*/
+/*}*/
+
+/*body.container {*/
+/*    !*max-width: 1000px;*!*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*.container {*/
+/*    max-width: 960px;*/
+/*    margin: 0 auto;*/
+/*    padding: 20px;*/
+/*}*/
+
+/*.header {*/
+/*    background-color: #faebd7;*/
+/*    color: #fff;*/
+/*    text-align: center;*/
+/*    padding: 10px 0;*/
+/*}*/
+
+/*header > h1 {*/
+/*    text-align: center;*/
+/*    !*border: 1px solid #000;*!*/
+/*}*/
+
+/*.header img {*/
+/*    width: 80px;*/
+/*    height: 80px;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+/*.textLogo {*/
+/*    font-size: 24px;*/
+/*}*/
+
+/*.main-content {*/
+/*    background-color: #fff;*/
+/*    border: 1px solid #ddd;*/
+/*    padding: 20px;*/
+/*    margin-top: 20px;*/
+/*}*/
+
+h1, h2 {
+    color: #988055;
+}
+
+.border {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+/*ul {*/
+/*    list-style: square;*/
+/*    margin-left: 20px;*/
+/*}*/
+
+/*footer {*/
+/*    !*text-align: center;*!*/
+/*    !*background-color: #333333;*!*/
+/*    !*color: #fff;*!*/
+/*    !*padding: 10px 0;*!*/
+/*    !*position: fixed;*!*/
+/*    text-align: center;*/
+/*    background-color: #333;*/
+/*    color: #fff;*/
+/*    padding: 1px;*/
+/*    !*position: fixed; !* Закрепляем подвал внизу страницы *!*!*/
+/*    bottom: 0; !* Отступ снизу *!*/
+/*    left: 0; !* Отступ слева *!*/
+/*    right: 0; !* Отступ справа *!*/
+/*}*/
+
+/* Additional styling specific to the "about.html" content */
+/*.borderTextCentre {*/
+/*    text-align: center;*/
+/*}*/
+
+/* Styling for specific sections or elements can be added here */
+

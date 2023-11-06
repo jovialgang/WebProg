@@ -3,14 +3,27 @@ div.container {
     margin: auto;
 }
 header.params {
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
 }
 header > h1 {
     text-align: center
 }
 
+/*nav a.active {*/
+/*    color: #ff0000; !* Change the color to highlight the active item *!*/
+/*    font-weight: bold;*/
+/*    !* Add other styles to highlight the active menu item *!*/
+/*}*/
+
+/*.active-menu-item {*/
+/*    background-color: #337ab7; !* Change the background color to indicate the active menu item *!*/
+/*    color: #fff; !* Change the text color for better visibility *!*/
+/*}*/
+
+
+
 body.container {
-    max-width: 1000px;
+    /*max-width: 1000px;*/
     margin: 0 auto;
 }
 
@@ -28,23 +41,14 @@ section.params {
     /*text-indent: -10em; !*красная строка*!*/
 }
 
-.styled-text {
-    /*color: blue; !* Задаем цвет текста *!*/
-    /*font-weight: 700; !* Делаем текст жирным *!*/
-    /*font-style: italic; !* Добавляем курсив *!*/
-    font-size: 30px;
-    /*background-color: yellow; !* Задаем фоновый цвет *!*/
-    text-decoration: underline; /* Добавляем подчеркивание */
-    /*padding: 2px 4px; !* Добавляем внутренний отступ *!*/
-    /*border: 1px solid red; !* Добавляем рамку *!*/
-    /*border-radius: 4px; !* Добавляем скругленные углы для рамки *!*/
-    /*word-spacing: 4px; !* Устанавливает интервал между словами в 4 пикселя *!*/
-    /*letter-spacing: 2px; !* Устанавливает интервал между символами в заголовке на 2 пикселя *!*/
-
-}
 
 .main-content {
-    margin-bottom: 60px; /* Отступ снизу, равный высоте закрепленного подвала */
+    /*margin-bottom: 60px; !* Отступ снизу, равный высоте закрепленного подвала *!*/
+    max-width: 1000px;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    /*text-align: center;*/
 }
 
 td.params {
@@ -52,7 +56,7 @@ td.params {
     border: 1px solid #000;
 }
 .border {
-    border: 1px solid #000; /* Толщина, стиль и цвет рамки */
+    /*border: 1px solid #000; !* Толщина, стиль и цвет рамки *!*/
 }
 
 .center {
@@ -103,6 +107,7 @@ section aside img {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border: 1px solid #000;
 }
 
 .flex-container > section {
@@ -134,7 +139,7 @@ section aside img {
     background-color: #333;
     color: #fff;
     padding: 1px;
-    position: fixed; /* Закрепляем подвал внизу страницы */
+    /*position: fixed; !* Закрепляем подвал внизу страницы *!*/
     bottom: 0; /* Отступ снизу */
     left: 0; /* Отступ слева */
     right: 0; /* Отступ справа */
@@ -169,30 +174,6 @@ table.grid-table td:nth-child(even) {
 
 
 
-
-
-/* Скрытие элементов на маленьких экранах */
-/*@media screen and (max-width: 1050px) {*/
-
-/*    table.grid-table {*/
-/*        display: grid;*/
-/*        grid-template-columns: repeat(2, 1fr);*/
-/*        grid-gap: 10px; !* Отступ между ячейками *!*/
-/*    }*/
-
-/*    .flex-container {*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        justify-content: center; !* Центрирование по вертикали *!*/
-/*        align-items: center; !* Центрирование по горизонтали *!*/
-/*    }*/
-
-/*    .hide-on-small-screen {*/
-/*        display: none;*/
-/*    }*/
-/*}*/
-
-
 /* Скрытие элементов на средних экранах */
 @media screen and (min-width: 1920px) {
     .container {
@@ -210,6 +191,54 @@ table.grid-table td:nth-child(even) {
     .container {
         max-width: 1400px; /* Увеличить максимальную ширину контейнера */
     }
+}
+
+
+/*.footer-links {*/
+/*    list-style: none;*/
+/*    padding: 0;*/
+/*    margin: 10px 0;*/
+/*}*/
+
+/*.footer-links li {*/
+/*    display: inline;*/
+/*    margin-right: 20px;*/
+/*}*/
+
+.footer-links a {
+    /*text-decoration: none;*/
+    color: #007bff;
+    /*font-weight: bold;*/
+    transition: color 0.4s; /* Плавное изменение цвета */
+}
+
+.footer-links a:hover {
+    color: #ff7f00; /* Цвет если навести курсор */
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 50px;
+    display: flex; /* Делаем элементы горизонтальными */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    /*border: 1px solid #000;*/
+
+}
+
+#menu li {
+    margin: 2px 100px; /* Добавляем отступы между пунктами меню */
+}
+
+#menu li a {
+    text-decoration: none;
+}
+
+#menu li.active a {
+    font-weight: bold;
+    color: #1a3857;
+    font-size: 1.1em;
+    /*border: 1px solid #000;*/
 }
 
 
