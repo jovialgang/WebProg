@@ -1,7 +1,11 @@
 (function() {
     // Функция для вычисления времени загрузки страницы
     function calculateLoadTime() {
-        return window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+        return window.performance.timing.loadEventEnd - window.performance.timing.navigationStart;
+        // return window.performance.timing.loadEventEnd - window.performance.timing.loadEventStart;
+
+        // return window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+
     }
 
     // Функция для отображения времени загрузки страницы
@@ -15,7 +19,7 @@
 
     // Добавить прослушиватель событий для выполнения статистики при загрузке страницы
     window.addEventListener("load", function() {
-        displayLoadTime();
+        setTimeout(displayLoadTime, 0);
     });
 })();
 

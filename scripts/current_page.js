@@ -2,6 +2,7 @@
 const menu = document.getElementById('menu');
 const content = document.getElementById('content');
 
+
 // Обработчик кликов по пунктам меню
 menu.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
@@ -12,7 +13,18 @@ menu.addEventListener('click', (e) => {
 });
 
 // Функция загрузки страницы
-function loadPage(pageName) {
+// function loadPage(pageName) {
+//     fetch(`${pageName}.html`) // Загрузка содержимого страницы по имени файла
+//         .then(response => response.text())
+//         .then(data => {
+//             content.innerHTML = data;
+//             updateActiveMenuItem(pageName);
+//         })
+//         // .catch(error => console.error(error));
+// }
+function loadPage() {
+    const pageName = window.location.hash.substring(1) || 'my_page'; // По умолчанию загружаем 'my_page'
+    // const pageName = window.location.hash.substring(1);
     fetch(`${pageName}.html`) // Загрузка содержимого страницы по имени файла
         .then(response => response.text())
         .then(data => {
@@ -21,6 +33,7 @@ function loadPage(pageName) {
         })
         // .catch(error => console.error(error));
 }
+
 
 // Функция обновления классов "active" для пунктов меню
 function updateActiveMenuItem(activePage) {
@@ -37,3 +50,5 @@ function updateActiveMenuItem(activePage) {
 
 // По умолчанию загружаем первую страницу
 loadPage('my_page');
+window.addEventListener('hashchange', loadPage);
+
