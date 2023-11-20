@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="resources/style/constructor.css">
+  <title>Table Constructor</title>
+</head>
+<body>
+<header>
+  <h1>Table Constructor</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <form id="tableForm">
+    <label for="days">Количество дней:</label>
+    <input type="number" id="days" name="days" min="1" required>
+
+    <label for="maxLessons">Максимальное число занятий в день:</label>
+    <input type="number" id="maxLessons" name="maxLessons" min="1" required>
+
+    <label for="language">Предмет:</label>
+    <input type="text" id="language" name="language" required>
+
+    <button type="submit">Generate Table</button>
+  </form>
+
+  <div id="resultContainer"></div>
+</main>
+
+<script src="scripts/constructor.js"></script>
+</body>
+</html>
