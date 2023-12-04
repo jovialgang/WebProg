@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integration Lab</title>
+    <!-- Подключение стилей для библиотек -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="resources/style/import_lib.css">
+</head>
+<body>
+
+<div>
+    <h1>Добро пожаловать</h1>
+    <p>Это страница, демонстрирующая подключение библиотек SweetAlert2 и Swiper.</p>
+
+    <!-- Пример использования SweetAlert2 для модального окна -->
+    <button class="custom-button" onclick="showModal()">Попробовать открыть окно</button>
+
+    <!-- Пример использования Swiper для слайдера -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Дальше можно не листать</div>
+
+
+        </div>
+        <!-- Добавление кнопок навигации для Swiper -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+</div>
+
+<!-- Подключение библиотек -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script src="scripts/import_lib.js"></script>
+
+</body>
+</html>

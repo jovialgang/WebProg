@@ -21,7 +21,6 @@
     <img src="resources/img/gif.gif" alt="Loading...">
 </div>
 
-<div id="error-message">⚠ Что-то пошло не так</div>
 
 <div id="filter-input">
     <label for="filter">Фильтр комментариев (ID): </label>
@@ -29,7 +28,30 @@
     <button id="apply-filter-button" onclick="fetchData()">Применить фильтр</button>
 </div>
 
+<div id="error-message">⚠ Что-то пошло не так</div>
+
+<!--<div id="data-container"></div>-->
+
+
+<!--<div id="data-container">-->
+<!--    &lt;!&ndash; Используем тег template для хранения шаблона &ndash;&gt;-->
+<!--    <template id="comment-template">-->
+<!--        <li>-->
+<!--            <strong><p></p></strong>: <p></p>-->
+<!--            <hr>-->
+<!--        </li>-->
+<!--    </template>-->
+<!--</div>-->
+
+
+
 <div id="data-container"></div>
+<template id="comment-template">
+    <li>
+        <strong><p></p></strong> <p></p>
+    </li>
+    <hr>
+</template>
 
 <script src="scripts/fetch.js"></script>
 
