@@ -65,11 +65,11 @@ td.params {
 
 .borderTextCentre {
     border: 1px solid #000;
-    /*text-align: center;*/
-    display: flex;
-    align-items: center;
-    padding-left: 14em;
-    gap: 6em;
+    text-align: center;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*padding-left: 14em;*/
+    /*gap: 6em;*/
 }
 
 
