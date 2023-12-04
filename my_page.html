@@ -4,11 +4,13 @@
 <head>
 <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script type="text/javascript" src="scripts/statistics.js"></script>
     <script src="scripts/fetch.js"></script>
 
 
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--    Мета-тег viewport с атрибутом content="width=device-width"-->
@@ -17,6 +19,8 @@
     <!--    что особенно важно для адаптивного дизайна веб-страниц.-->
 
     <link rel="stylesheet" type="text/css" href="resources/style/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/style/import_lib.css">
+
     <!--        <link rel="stylesheet" type="text/css" href="resources/style/new_index_style.css">-->
     <!--    <link rel="stylesheet" type="text/css" href="resources/style/outline-prototype-label.css">-->
 
@@ -36,8 +40,13 @@
 <main class="border main-content">
     <section class="borderTextCentre">
         <h2>Профиль пользователя</h2>
-        <!-- Здесь будет информация о профиле пользователя -->
+        <button class="custom-button" onclick="showModal()">Добавить в друзья</button>
+        <script src="scripts/import_lib.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     </section>
+
+
 
     <div class="container">
         <div class="flex-container">
@@ -49,7 +58,6 @@
                         <li><a href="#">Профиль</a></li>
                         <li><a href="#">Друзья</a></li>
                         <li><a href="#">Донат</a></li>
-
                     </ol>
 
                 </nav>
@@ -206,7 +214,7 @@
 <!--        <li><a href="contact.html" target="_blank">Свяжитесь с Нами</a></li>-->
 <!--    </ul>-->
 <!--</footer>-->
-
+<!--<script src="scripts/import_lib.js"></script>-->
 </body>
 
 
