@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отображение случайных комментариев</title>
+    <link rel="stylesheet" href="resources/style/fetch.css">
+</head>
+<body>
+
+<header>
+    <h1>Fetch Manager</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="preloader">
+    <img src="resources/img/gif.gif" alt="Loading...">
+</div>
+
+<div id="error-message">⚠ Что-то пошло не так</div>
+
+<div id="filter-input">
+    <label for="filter">Фильтр комментариев (ID): </label>
+    <input type="number" id="filter" placeholder="Введите ID">
+    <button id="apply-filter-button" onclick="fetchData()">Применить фильтр</button>
+</div>
+
+<div id="data-container"></div>
+
+<script src="scripts/fetch.js"></script>
+
+</body>
+</html>

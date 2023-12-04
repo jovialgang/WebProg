@@ -1,0 +1,104 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p, ul, li, figure, figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*font-family: 'Arial', sans-serif;*/
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #988055;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#preloader {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+#preloader img {
+    width: 50px;
+    height: 50px;
+}
+
+#error-message {
+    display: none;
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#filter-input {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#filter-input label {
+    margin-right: 10px;
+}
+
+#filter {
+    padding: 5px;
+    font-size: 16px;
+}
+
+#apply-filter-button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333333;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+#data-container {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#data-container p {
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    margin: 10px 0;
+}
